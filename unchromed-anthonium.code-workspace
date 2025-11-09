@@ -1,0 +1,38 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "cmake.configureOnOpen": false,
+        "files.exclude": {
+            "**/.git": true,
+            "**/.cipd_bin": true,
+            "**/out": true,
+            "**/third_party/cache": true
+        },
+        "files.watcherExclude": {
+            "**/.git/**": true,
+            "**/.cipd_bin/**": true,
+            "**/out/**": true,
+            "**/third_party/cache/**": true
+        },
+        "files.associations": {
+            "BUILD.gn": "python",
+            "*.gni": "python",
+            "*.gn": "python"
+        },
+        "editor.formatOnSave": false,
+        "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+    },
+    "extensions": {
+        "recommendations": [
+            "ms-vscode.cpptools",
+            "ms-vscode.cmake-tools",
+            "ms-python.python",
+            "ms-vscode.git-graph",
+            "ms-vscode.powershell"
+        ]
+    }
+}

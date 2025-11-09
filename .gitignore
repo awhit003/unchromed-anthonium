@@ -1,0 +1,59 @@
+## Comprehensive ignore: macOS, tools, build artifacts, plus human-only notes
+
+# macOS system files
+.DS_Store
+.AppleDouble
+._*
+.LSOverride
+Icon?
+.Spotlight-V100
+.Trashes
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.venv/
+venv/
+
+# Xcode (common on macOS devs)
+build/
+DerivedData/
+
+# Chromium / GN / Ninja build outputs
+out/
+obj/
+gen/
+.ninja_log
+build.ninja
+
+# ccache
+.ccache/
+
+# IDEs/editors
+.idea/
+.fleet/
+.vs/
+.history/
+.DS_Store?
+.Trash-*/
+
+# VS Code: ignore folder but explicitly keep the project spec
+.vscode/*
+!.vscode/project-specification.md
+
+# Human-only notes per header
+/docs/user-notes
