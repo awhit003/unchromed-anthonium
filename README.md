@@ -1,39 +1,56 @@
 
+# Anthonium (Custom Chromium)
 
-# Project Specification for Customized Chromium Build
-## Objective
-To create a customized version of the Chromium browser with specific features and optimizations tailored to our requirements
+A customized version of the Chromium browser with feature parity to the official release while ensuring compliance with all relevant licenses.
+
+## Project Objective
+
+To create a personalized fork of the open-source Chromium web browser. The project will be named "unchromed-anthonium".
+
+- The browser is rebranded to be refered to as simply "anthonium" inside and outside of the application.
+- will maintain feature parity with Chromium while not referencing `chromium` or `chrome` or `google` outside of documentation.
+- The custom branding assets are the terminal alias `ua` primarily, standing for the "unchromed-antonium" name, and a solid black square for an icon.
+
+## Current Status & Base
+
+Base Code: The main Chromium repository source code has been checked out (src/ directory is locally available).
+
+Development Platforms:
+
+- macOS (using depot_tools)
+- Win11 (using Visual Studio 2022)
+
+Target Platforms:
+
+- macOS,
+- Windows 11.
+
+Build State:
+- Build environment is configured and ready for the initial gn gen and autoninja process on macOS.
+- Build environment is awaiting verification that it is configured and ready for the initial gn gen and autoninja process on Windows 11.
+
+### Key Locations (Host Paths)
+
+- Meta repo (this repository): macOS `~/Developer/unchromed-anthonium`, Windows `C:\src\unchromed-anthonium`
+- Chromium checkout root: macOS `~/Developer/chromium`, Windows `C:\src\chromium`
+- Chromium source tree: `.../chromium/src`
+- depot_tools: macOS `~/depot_tools`, Windows `C:\src\depot_tools`
 
 
+## Immediate Technical Task
 
-## Requirements
-1. **Source Code Acquisition**: Clone the Chromium source code from the official repository.
-2. **Development Environment**: Set up a C++ development environment with necessary tools and libraries
-3. **Customization**: Only rebranding for now.
-4. **Build Process**: Configure and execute the build process for Chromium.
-5. **Testing**: Conduct thorough testing to ensure stability and performance of the customized build.
-6. **Documentation**: Limited. Only document the customization and build process for future reference.
-## Tools and Technologies
-- C++ Programming Language
-- Git for version control
-- GN and Ninja build systems
-- Visual Studio Code as the IDE
-- Chromium's official build tools and dependencies
-## Steps to Set Up the Workspace
-1. **Clone the Repository**: Use Git to clone the Chromium source code.
+The immediate goal is to successfully execute the first build of a rebranded application, "anthonium," from the Chromium source. This involves google checkout in a way I don't understand, yet.
 
-```bash
-git clone https://chromium.googlesource.com/chromium/src.git
-```
+Once the basic fork is stable and rebranded, the features will be integrated in subsequent phases.
 
-2. **Install Dependencies**: Follow the official Chromium documentation to install all required dependencies for building Chromium on your operating system.
-3. **Set Up Development Environment**: Configure Visual Studio Code with necessary extensions for C++
-4. **Customize the Code**: Implement the desired customizations in the Chromium source code.
-5. **Build the Project**: Use GN and Ninja to configure and build the customized Chromium
+## Endstate Vision
 
-```bash
-gn gen out/Default
-ninja -C out/Default chrome
-```
+The final product will be a fully functional web browser that makes no reference to chrome, chromium, or google, outisde of the licensing documentation, that is customized.
 
-6. **Test the Build**: Run the built browser from the terminal.
+## Contributing & Sync Workflow (High-Level)
+
+1. Pull latest: `git pull origin main`
+2. Make changes in this meta repo (branding docs) separately from Chromium source edits.
+3. Rebrand changes occur under the Chromium checkout (`chromium/src/...`). Keep those patches small & well-commented with upstream license headers retained.
+4. Build & test on macOS, then replicate on Windows. Or, the other way around.
+5. Commit & push: `git add -p && git commit -m "<message>" && git push origin main`.

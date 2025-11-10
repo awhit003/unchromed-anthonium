@@ -54,6 +54,9 @@ build.ninja
 # VS Code: ignore folder but explicitly keep the project spec
 .vscode/*
 !.vscode/project-specification.md
+!.vscode/local-macos-instructions.md
 
-# Human-only notes per header
-/docs/user-notes
+# Human-only scratchpad is kept under .notes/ and intentionally ignored externally.
+# The /docs directory contains shareable platform instructions and MUST be tracked.
+# (If sensitive personal notes are needed, put them in .notes/ not docs/.)
+.notes/

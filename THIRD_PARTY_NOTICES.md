@@ -14,8 +14,13 @@ respective licenses documented below or in a dedicated subdirectory.
 - Chromium master license: https://chromium.googlesource.com/chromium/src/+/main/LICENSE
 - Individual third-party licenses: Located under `third_party/` in the Chromium source tree.
 
+Path reminder (host conventions):
+- macOS Chromium source: `~/Developer/chromium/src`
+- Windows Chromium source: `C:\src\chromium\src`
+
 ## Added Dependencies (None yet)
 _No additional third-party software beyond Chromium has been added at this time._
 
 ## Attribution
-Copyright (c) 2025 awhit003. Project: unchromed-anthonium.
+Copyright (c) 2025 Sledgebreaker (Yep division).
+Project: unchromed-anthonium ("Anthonium" branding layer over upstream Chromium).
