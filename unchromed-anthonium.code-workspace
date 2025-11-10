@@ -27,7 +27,8 @@
             "*.gn": "python"
         },
         "editor.formatOnSave": false,
-        "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+        "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+        "powershell.cwd": "unchromed-anthonium"
     },
     "extensions": {
         "recommendations": [

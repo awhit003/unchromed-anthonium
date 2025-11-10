@@ -22,5 +22,5 @@ Path reminder (host conventions):
 _No additional third-party software beyond Chromium has been added at this time._
 
 ## Attribution
-Copyright (c) 2025 Sledgebreaker (Yep division).
+Copyright (c) 2025 Yep (A division of Sledgebreaker).
 Project: unchromed-anthonium ("Anthonium" branding layer over upstream Chromium).
