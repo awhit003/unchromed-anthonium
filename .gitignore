@@ -47,13 +47,11 @@ build.ninja
 .idea/
 .fleet/
 .vs/
+.vscode/*
 .history/
 .DS_Store?
 .Trash-*/
-
-# VS Code: ignore folder but explicitly keep the project spec
-.vscode/*
-
+.trash/
 
 # Human-only scratchpad is kept under .notes/ and intentionally ignored externally.
 # The /docs directory contains shareable platform instructions and MUST be tracked.
