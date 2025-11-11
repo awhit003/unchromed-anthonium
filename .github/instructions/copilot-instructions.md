@@ -1,10 +1,13 @@
 ---
 
-applyTo: "src/**/*.**"
+applyTo:
+  - "src/**/*.**"
+  - "~/Developer/unchromed-anthonium/**"
+  - "~/Developer/chromium/**"
 
 ---
 
-# GGitHub Copilot (and other automated tools) Instructions for Unchromed Anthonium
+# GitHub Copilot (and other automated tools) Instructions for Unchromed Anthonium
 
  categorize the preference into one of three files:
 •	.editorconfig for coding standards
