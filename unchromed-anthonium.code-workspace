@@ -2,9 +2,6 @@
     "folders": [
         {
             "path": "."
-        },
-        {
-            "path": "../chromium"
         }
     ],
     "settings": {
@@ -28,7 +25,8 @@
         },
         "editor.formatOnSave": false,
         "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
-        "powershell.cwd": "unchromed-anthonium"
+        "powershell.cwd": "unchromed-anthonium",
+        "git.ignoreLimitWarning": true
     },
     "extensions": {
         "recommendations": [
